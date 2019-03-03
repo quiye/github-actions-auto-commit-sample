@@ -1,11 +1,11 @@
 workflow "git commit" {
   on = "push"
-  resolves =["git command1", "git command2"]
+  resolves = ["git command1", "git command2"]
 }
 
 action "git command1" {
   uses = "srt32/git-actions@v0.0.3"
-  runs = "date > hoge"
+  runs = "date [YYYY.]MM.DD-hh:mm[:ss] > hoge"
 }
 
 action "git command2" {
