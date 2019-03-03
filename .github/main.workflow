@@ -5,7 +5,7 @@ workflow "git commit" {
 
 action "git command1" {
   uses = "srt32/git-actions@v0.0.3"
-  runs = "date [YYYY.]MM.DD-hh:mm[:ss] > hoge"
+  runs = "echo `git log` > hoge"
 }
 
 action "git command2" {
