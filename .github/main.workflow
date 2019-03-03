@@ -11,5 +11,5 @@ action "git command1" {
 action "git command2" {
   uses = "srt32/git-actions@v0.0.3"
   needs = ["git command1"]
-  runs = "pwd && ls -l && git add hoge && git commit -m `date` && git push origin master"
+  args = "pwd && ls -l && git add hoge && git commit -m hhhh && git push origin master"
 }
